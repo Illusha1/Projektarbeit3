@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Beitragsseite</title>
+  </head>
+
+  <body>
+    <section id="header">
+      <!-- HEADER -->
+
+      <header class="p-3 text">
+        <!---bg-dark hinzufügen für schwarze farbe-->
+
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="#"
+              class="nav-link px-2 text-secondary d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+              ><img src="./ffvhlogo.png" alt="Logo von FFVH"
+            /></a>
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li>
+                <a href="./index.html" class="nav-link px-2 text-white"
+                  >Beiträge</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">Spielbetrieb</a>
+              </li>
+              <li><a href="#" class="nav-link px-2 text-white">Termine</a></li>
+            </ul>
+
+            <form class="col-lg-auto mb-lg-0 me-lg-3 p-1" role="search">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Suchen..."
+                aria-label="Search"
+                data-twofas-input-listener="true"
+                data-twofas-input="f362daf9-0b87-4ed3-8513-7ef0a01da8f5"
+              />
+            </form>
+
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">
+                Anmelden
+              </button>
+              <button type="button" class="btn btn-warning">
+                Mitglied werden
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <article>
+      <section id="formular">
+        <!-- FORMULAR -->
+        <div class="container mt-4">
+          <h2>Kontaktformular</h2>
+          <form action="#" method="post">
+            <div class="form-group mb-1">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Vorname Nachname"
+                required
+              />
+            </div>
+
+            <div class="form-group mb-1">
+              <label for="email">E-Mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="beispiel@gmail.com"
+                aria-label="E-Mail"
+                required
+              />
+            </div>
+
+            <div class="form-group mb-1">
+              <label for="reason">Grund der Kontaktaufnahme:</label>
+              <select
+                class="form-control"
+                id="reason"
+                name="reason"
+                aria-label="Grund der Kontaktaufnahme"
+                required
+              >
+                <option value="allgemein">Allgemeine Anfrage</option>
+                <option value="support">Technischer Support</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div>Art der Anfrage:</div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="anfrage1"
+                  name="anfrage"
+                  value="anfrage1"
+                  aria-label="Anfrage 1"
+                />
+                <label class="form-check-label" for="anfrage1">Anfrage 1</label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="anfrage2"
+                  name="anfrage"
+                  value="anfrage2"
+                  aria-label="Anfrage 2"
+                />
+                <label class="form-check-label" for="anfrage2">Anfrage 2</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2">Absenden</button>
+          </form>
+        </div>
+      </section>
+    </article>
+    <section id="footer">
+      <!-- Footer -->
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
+      >
+        <p class="col-md-6 mb-0 text-body-secondary">
+          © 2023 FFVH – Dachverband für Betriebs- und Freizeitsport Fußball in
+          und um Hannover
+        </p>
+
+        <ul class="nav col-md-6 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Impressum</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Datenschutz</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Über uns</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
